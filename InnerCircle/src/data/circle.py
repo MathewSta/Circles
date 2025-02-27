@@ -45,9 +45,6 @@ def modify(circle: Circle, newRadius: float):
     circle2 = get_one(circle.radius)
     return circle2
 
-def replace(circle: Circle):
-    return circle
-
 def delete(circle: Circle):
     qry = "DELETE FROM circle WHERE radius=:radius"
     params = {"radius": circle.radius}
