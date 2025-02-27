@@ -41,6 +41,10 @@ def modify(circle: Circle):
     return circle
 
 def replace(circle: Circle):
+    qry = "REPLACE FROM circle WHERE radius=:radius"
+    params = model_to_dict(circle)
+    curs.execute(qry, params)
+    conn.commit()
     return circle
 
 def delete(circle: Circle):
