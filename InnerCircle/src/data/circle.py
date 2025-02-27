@@ -43,7 +43,7 @@ def modify(circle: Circle, newRadius: float):
     params = model_to_dict(circle)
     _ = curs.execute(qry, params)
     circle2 = get_one(circle.radius)
-  return circle2
+    return circle2
 
 def replace(circle: Circle):
     return circle
