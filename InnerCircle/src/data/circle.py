@@ -39,7 +39,6 @@ def create(circle: Circle):
 
 def modify(circle: Circle, newRadius: float):
     circle.radius = newRadius
-    return circle
 
 def replace(circle: Circle):
     return circle
