@@ -37,7 +37,8 @@ def create(circle: Circle):
     conn.commit()
     return circle
 
-def modify(circle: Circle):
+def modify(circle: Circle, newRadius: float):
+    circle.radius = newRadius
     return circle
 
 def replace(circle: Circle):
